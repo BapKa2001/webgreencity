@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luật EMS - GREEN CITY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Green City logo">
+      <h2>GREEN CITY</h2>
+    </div>
+    <nav>
+      <a href="index.html#home">Trang Chủ</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+
+  <div class="video-modal" id="introModal">
+    <div class="video-modal-content">
+      <button class="close-modal" aria-label="Đóng">&times;</button>
+      <h2>Giới thiệu GREEN CITY</h2>
+      <video controls preload="metadata" poster="assets/video-poster.jpg">
+        <source src="assets/intro.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
+      <div class="team-info">
+        <h3>Avatar cư dân Discord</h3>
+        <div class="avatar-grid">
+          <div class="avatar-card">
+            <img src="assets/avatar-1.png" alt="Cư dân 1">
+            <p>Cư dân 1</p>
+          </div>
+          <div class="avatar-card">
+            <img src="assets/avatar-2.png" alt="Cư dân 2">
+            <p>Cư dân 2</p>
+          </div>
+          <div class="avatar-card">
+            <img src="assets/avatar-3.png" alt="Cư dân 3">
+            <p>Cư dân 3</p>
+          </div>
+          <div class="avatar-card">
+            <img src="assets/avatar-4.png" alt="Cư dân 4">
+            <p>Cư dân 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-modal" id="donateModal">
+    <div class="video-modal-content donate-modal-content">
+      <button class="close-modal" aria-label="Đóng">&times;</button>
+      <h2>Ủng Hộ Team GREEN CITY</h2>
+      <p>Quét mã QR ngân hàng bên dưới để donate cho Green City.</p>
+      <div class="qr-box">
+        <img src="assets/donate-qr.png" alt="Mã QR ngân hàng">
+      </div>
+      <p class="qr-note">TEAM GREEN CITY xin cảm ơn sự ủng hộ của các bạn!</p>
+    </div>
+  </div>
+
+  <div class="support-modal" id="supportModal">
+    <div class="support-modal-content">
+      <button class="close-modal" aria-label="Đóng">&times;</button>
+      <h2>Hỗ Trợ Green City</h2>
+      <p>Nếu bạn cần trợ giúp ngay lập tức, hãy nhấn nút bên dưới để mở Discord hoặc gửi yêu cầu hỗ trợ.</p>
+      <div class="support-links">
+        <a class="btn support-discord" href="https://discord.gg/HBxBDv8QAj" target="_blank" rel="noopener noreferrer">Mở Discord</a>
+        <a class="btn support-email" href="mailto:support@greencity.vn">Gửi Email</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="rules-page">
+    <div class="rules-hero">
+      <div class="rules-title-wrap">
+        <img src="assets/logo.png" alt="Green City logo" class="rules-title-logo">
+        <h1>Luật</h1>
+      </div>
+      <p>Những quy tắc cơ bản cho từng vai trò trong thành phố: rõ ràng, dễ nhớ và tôn trọng cộng đồng.</p>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rules-card">
+        <a class="rule-link" href="ems.html">
+          <h2>Luật EMS</h2>
+        </a>
+      </article>
+
+      <article class="rules-card">
+        <a class="rule-link" href="police.html">
+          <h2>Luật Police</h2>
+        </a>
+      </article>
+
+      <article class="rules-card">
+        <a class="rule-link" href="mechanic.html">
+          <h2>Luật Mechanic</h2>
+        </a>
+      </article>
+
+      <article class="rules-card">
+        <a class="rule-link" href="taxi.html">
+          <h2>Luật Taxi</h2>
+        </a>
+      </article>
+
+      <article class="rules-card">
+        <a class="rule-link" href="city.html">
+          <h2>Luật Thành phố</h2>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <h2>THÀNH PHỐ GREEN CITY</h2>
+    <p>© Bản quyền Team Green City.</p>
+    <p>© THÀNH LẬP NGÀY 1/8/2026.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -32,23 +32,13 @@
 
 <a href="#home">Trang Chủ</a>
 
-<a href="#">Giới Thiệu</a>
-
-<a href="#jobs">Nghề Nghiệp</a>
-
-<a href="#news">Tin Tức</a>
-
-<a href="#">Donate</a>
-
-<a href="#">Discord</a>
+<a href="donate.html">Donate</a>
 
 </nav>
 
-<a class="play" href="#">CHƠI NGAY</a>
-
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
 
 <div class="left">
 
@@ -58,16 +48,22 @@
 
 <p>
 
-Thành phố Roleplay hiện đại với hàng trăm công việc,
-hệ thống xe cộ, nhà cửa và những trải nghiệm nhập vai chân thực.
-
+Green City hiện đại với nhiều công việc hấp dẫn, sự kiện thú vị và cộng đồng thân thiện. Hãy tham gia ngay để trải nghiệm!
 </p>
 
 <div class="buttons">
 
-<a class="btn1" href="#">VÀO THÀNH PHỐ</a>
+<p class="note">Vui lòng tải FiveM trước khi vào thành phố.</p>
 
-<a class="btn2" href="#">DISCORD</a>
+<a class="btn3" href="https://fivem.net/" target="_blank" rel="noopener noreferrer">TẢI FIVEM</a>
+
+<a class="btn2" href="https://discord.gg/HBxBDv8QAj" target="_blank" rel="noopener noreferrer">DISCORD</a>
+
+<button class="btn4 intro-open" type="button">GIỚI THIỆU</button>
+
+<a class="btn5" href="rules.html">LUẬT</a>
+
+<button class="btn1 connect-button" type="button">VÀO THÀNH PHỐ</button>
 
 </div>
 
@@ -81,157 +77,122 @@ hệ thống xe cộ, nhà cửa và những trải nghiệm nhập vai chân th
 
 </section>
 
-<section class="stats">
+<div class="video-modal" id="introModal">
 
-<div class="card">
+<div class="video-modal-content">
 
-<h3>👥 Online</h3>
+<button class="close-modal" aria-label="Đóng">&times;</button>
 
-<h1>286</h1>
+<h2>Giới thiệu GREEN CITY</h2>
 
-</div>
+<video controls preload="metadata" poster="assets/video-poster.jpg">
 
-<div class="card">
+<source src="assets/intro.mp4" type="video/mp4">
 
-<h3>🚓 Police</h3>
+Trình duyệt của bạn không hỗ trợ video.
 
-<h1>23</h1>
+</video>
 
-</div>
+<div class="team-info">
 
-<div class="card">
+<h3>Admin Discord</h3>
 
-<h3>🚑 EMS</h3>
+<div class="avatar-grid">
 
-<h1>11</h1>
+<div class="avatar-card">
 
-</div>
+<img src="assets/avatar-1.png" alt="Cư dân 1">
 
-<div class="card">
-
-<h3>🔧 Mechanic</h3>
-
-<h1>17</h1>
+<p>Cư dân 1</p>
 
 </div>
 
-</section>
+<div class="avatar-card">
 
-<section class="jobs">
+<img src="assets/avatar-2.png" alt="Cư dân 2">
 
-<h1>CÔNG VIỆC</h1>
-
-<div class="grid">
-
-<div class="job">
-
-<img src="assets/police.png">
-
-<h2>Police</h2>
-
-<p>Bảo vệ thành phố.</p>
+<p>Cư dân 2</p>
 
 </div>
 
-<div class="job">
+<div class="avatar-card">
 
-<img src="assets/ems.png">
+<img src="assets/avatar-3.png" alt="Cư dân 3">
 
-<h2>EMS</h2>
-
-<p>Cứu chữa công dân.</p>
+<p>Cư dân 3</p>
 
 </div>
 
-<div class="job">
+<div class="avatar-card">
 
-<img src="assets/mechanic.png">
+<img src="assets/avatar-4.png" alt="Cư dân 4">
 
-<h2>Mechanic</h2>
-
-<p>Sửa chữa xe.</p>
-
-</div>
-
-<div class="job">
-
-<img src="assets/taxi.png">
-
-<h2>Taxi</h2>
-
-<p>Đưa đón khách.</p>
-
-</div>
-
-<div class="job">
-
-<img src="assets/farmer.png">
-
-<h2>Farmer</h2>
-
-<p>Trồng trọt và thu hoạch.</p>
-
-</div>
-
-<div class="job">
-
-<img src="assets/burger.png">
-
-<h2>Burger Shot</h2>
-
-<p>Phục vụ đồ ăn.</p>
+<p>Cư dân 4</p>
 
 </div>
 
 </div>
 
-</section>
-
-<section class="news">
-
-<h1>TIN TỨC</h1>
-
-<div class="newsBox">
-
-<div class="newsCard">
-
-<img src="assets/news1.jpg">
-
-<h2>Cập nhật phiên bản mới</h2>
-
-<p>Thêm nhiều tính năng Roleplay.</p>
-
 </div>
-
-<div class="newsCard">
-
-<img src="assets/news2.jpg">
-
-<h2>Sự kiện cuối tuần</h2>
-
-<p>Nhận thưởng hấp dẫn.</p>
-
-</div>
-
-<div class="newsCard">
-
-<img src="assets/news3.jpg">
-
-<h2>Tuyển dụng Police</h2>
-
-<p>Mở đơn tuyển thành viên.</p>
 
 </div>
 
 </div>
 
+<div class="video-modal" id="donateModal">
+
+<div class="video-modal-content donate-modal-content">
+
+<button class="close-modal" aria-label="Đóng">&times;</button>
+
+<h2>Ủng Hộ Team GREEN CITY</h2>
+
+<p>Quét mã QR ngân hàng bên dưới để donate cho Green City.</p>
+
+<div class="qr-box">
+
+<img src="assets/donate-qr.png" alt="Mã QR ngân hàng">
+
+</div>
+
+<p class="qr-note">TEAM GREEN CITY xin cảm ơn sự ủng hộ của các bạn!</p>
+
+</div>
+
+</div>
+
+<div class="support-modal" id="supportModal">
+  <div class="support-modal-content">
+    <button class="close-modal" aria-label="Đóng">&times;</button>
+    <h2>Hỗ Trợ Green City</h2>
+    <p>Nếu bạn cần trợ giúp ngay lập tức, hãy nhấn nút bên dưới để mở Discord hoặc gửi yêu cầu hỗ trợ.</p>
+    <div class="support-links">
+      <a class="btn support-discord" href="https://discord.gg/HBxBDv8QAj" target="_blank" rel="noopener noreferrer">Mở Discord</a>
+      <a class="btn support-email" href="mailto:support@greencity.vn">Gửi Email</a>
+    </div>
+  </div>
+</div>
+
+<section id="support" class="support">
+  <div class="support-card">
+    <div class="support-copy">
+      <h2>Chat Hỗ Trợ</h2>
+      <p>Đội ngũ Green City luôn sẵn sàng trợ giúp. Nhấn vào Discord để nói chuyện trực tiếp hoặc gửi yêu cầu hỗ trợ nhanh.</p>
+    </div>
+    <div class="support-actions">
+      <a class="btn support-btn" href="https://discord.gg/HBxBDv8QAj" target="_blank" rel="noopener noreferrer">Mở Chat Discord</a>
+      <button class="btn support-open" type="button">Yêu Cầu Hỗ Trợ</button>
+    </div>
+  </div>
 </section>
 
 <footer>
 
-<h2>GREEN CITY ROLEPLAY</h2>
+<h2> THÀNH PHỐ GREEN CITY </h2>
 
-<p>© 2026 Green City. All Rights Reserved.</p>
+<p>© Bản quyền Team Green City.</p>
+
+<p>© THÀNH LẬP NGÀY 1/8/2026.</p>
 
 </footer>
 
