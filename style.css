@@ -253,18 +253,28 @@ nav a.active {
 }
 
 .note-marquee {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding: 20px 26px;
+}
+
+.note-line {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    padding: 20px 26px;
 }
 
 .note-track {
     display: inline-flex;
     gap: 72px;
     min-width: max-content;
-    animation: note-marquee 16s linear infinite;
+    animation: note-marquee 28s linear infinite;
+}
+
+.note-track-second {
+    animation-duration: 32s;
 }
 
 .note-track span {
