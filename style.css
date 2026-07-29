@@ -1383,6 +1383,13 @@ body.ems-pink-theme .ems-big-btn-alt:hover {
         inset 0 0 0 1px rgba(255, 255, 255, 0.55);
 }
 
+body.ems-pink-theme .ems-home-main {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .back-to-top {
     display:inline-block;
     margin-top:18px;
@@ -1395,5 +1402,9 @@ body.ems-pink-theme .ems-big-btn-alt:hover {
     .law-article { padding:18px 16px; }
     .law-toc { gap:8px; }
     .ems-quick-links { grid-template-columns: 1fr; }
+    body.ems-pink-theme .ems-home-main {
+        min-height: auto;
+        justify-content: flex-start;
+    }
 }
 
