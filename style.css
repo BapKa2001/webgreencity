@@ -427,7 +427,8 @@ nav a.active {
     top: calc(100% + 12px);
     width: 100%;
     height: auto;
-    opacity: 0.32;
+    opacity: 0.18;
+    box-shadow: none;
     filter: none;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
