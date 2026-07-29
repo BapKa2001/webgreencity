@@ -270,11 +270,11 @@ nav a.active {
     display: inline-flex;
     gap: 72px;
     min-width: max-content;
-    animation: note-marquee 28s linear infinite;
+    animation: note-marquee 22s linear infinite;
 }
 
 .note-track-second {
-    animation-duration: 32s;
+    animation-duration: 26s;
 }
 
 .note-track span {
