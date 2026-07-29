@@ -1236,6 +1236,26 @@ footer p {
     box-shadow: 0 8px 36px rgba(78,156,255,0.22), 0 0 18px rgba(78,156,255,0.24);
 }
 
+.lawbook-btn.green {
+    color: #eaffea;
+    border-color: rgba(57, 255, 20, 0.55);
+    text-shadow:
+        0 0 8px rgba(57, 255, 20, 0.95),
+        0 0 18px rgba(57, 255, 20, 0.5);
+    box-shadow:
+        0 8px 36px rgba(57, 255, 20, 0.26),
+        0 0 22px rgba(57, 255, 20, 0.34),
+        inset 0 0 0 1px rgba(133, 255, 112, 0.2);
+    animation: lawbook-neon-green 1.15s ease-in-out infinite;
+}
+
+.lawbook-btn.green:hover {
+    box-shadow:
+        0 12px 42px rgba(57, 255, 20, 0.32),
+        0 0 28px rgba(57, 255, 20, 0.45),
+        inset 0 0 0 1px rgba(168, 255, 153, 0.32);
+}
+
 .lawbook-btn.red {
     border-color: rgba(255,45,90,0.38);
     box-shadow: 0 8px 36px rgba(255,45,90,0.22), 0 0 18px rgba(255,45,90,0.24);
@@ -1255,6 +1275,18 @@ footer p {
     50% {
         filter: brightness(1.18);
         opacity: 0.92;
+    }
+}
+
+@keyframes lawbook-neon-green {
+    0%,
+    100% {
+        filter: brightness(1);
+        opacity: 1;
+    }
+    50% {
+        filter: brightness(1.28);
+        opacity: 0.94;
     }
 }
 .lawbook-note {
