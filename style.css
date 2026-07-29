@@ -875,6 +875,73 @@ nav a.active {
     text-shadow: 0 0 14px rgba(255, 173, 214, 0.35);
 }
 
+/* Blue/red/black siren style for Police card on rules page */
+.police-rule-card {
+    border-color: rgba(78, 156, 255, 0.36);
+    background:
+        linear-gradient(135deg, rgba(15, 32, 65, 0.78), rgba(46, 7, 12, 0.72));
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+.police-rule-link {
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(10, 25, 48, 0.72), rgba(38, 8, 12, 0.68));
+    animation: police-siren-bg 1.15s ease-in-out infinite;
+}
+
+.police-rule-link::before,
+.police-rule-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 140%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    filter: blur(12px);
+    opacity: 0.25;
+}
+
+.police-rule-link::before {
+    left: -8%;
+    background: radial-gradient(circle, rgba(65, 145, 255, 0.62), rgba(65, 145, 255, 0));
+    animation: police-siren-blue 1.15s ease-in-out infinite;
+}
+
+.police-rule-link::after {
+    right: -8%;
+    background: radial-gradient(circle, rgba(255, 70, 70, 0.62), rgba(255, 70, 70, 0));
+    animation: police-siren-red 1.15s ease-in-out infinite;
+}
+
+.police-rule-link h2 {
+    color: #eaf3ff;
+    text-shadow:
+        0 0 8px rgba(120, 175, 255, 0.52),
+        0 0 12px rgba(255, 95, 95, 0.35);
+}
+
+@keyframes police-siren-bg {
+    0%, 100% {
+        box-shadow: inset 0 0 0 1px rgba(123, 174, 255, 0.22), 0 0 22px rgba(58, 122, 255, 0.22);
+    }
+    50% {
+        box-shadow: inset 0 0 0 1px rgba(255, 116, 116, 0.22), 0 0 22px rgba(255, 74, 74, 0.2);
+    }
+}
+
+@keyframes police-siren-blue {
+    0%, 100% { opacity: 0.68; transform: translateY(-50%) scale(1.02); }
+    50% { opacity: 0.12; transform: translateY(-50%) scale(0.95); }
+}
+
+@keyframes police-siren-red {
+    0%, 100% { opacity: 0.12; transform: translateY(-50%) scale(0.95); }
+    50% { opacity: 0.68; transform: translateY(-50%) scale(1.02); }
+}
+
 .law-detail {
     padding: 120px 42px 80px;
     display: flex;
