@@ -395,20 +395,7 @@ nav a.active {
 }
 
 .three-d-wrap::after {
-    /* moving specular sheen */
-    content: '';
-    position: absolute;
-    top: -10%;
-    left: -40%;
-    width: 40%;
-    height: 120%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-    transform: skewX(-25deg) translateX(-100%);
-    filter: blur(8px);
-    opacity: 0.9;
-    pointer-events: none;
-    mix-blend-mode: screen;
-    animation: sheen 3s ease-in-out infinite;
+    content: none;
 }
 
 @keyframes sheen {
