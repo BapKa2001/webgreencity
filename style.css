@@ -1542,6 +1542,18 @@ body.ems-pink-theme .ems-note p {
         color: #ff3b3b;
     }
 
+    .law-article p.notice-blue {
+        color: #8cc8ff;
+        font-weight: 600;
+        text-shadow: 0 0 10px rgba(84, 169, 255, 0.18);
+    }
+
+    .law-article p.notice-yellow {
+        color: #ffd86f;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(255, 201, 72, 0.16);
+    }
+
 body.ems-pink-theme .law-article ul li::marker,
 body.ems-pink-theme .law-article ul li::before {
     color: #ff9ccf;
