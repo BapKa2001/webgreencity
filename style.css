@@ -1165,7 +1165,9 @@ footer p {
 
 /* Law book / Police page specific styles */
 .lawbook-hero {
-    padding: 120px 42px 80px;
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 36px 42px;
     text-align: center;
 }
 .lawbook-title {
@@ -1246,6 +1248,7 @@ footer p {
     min-height: calc(100vh - 90px);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .pd-law-note {
