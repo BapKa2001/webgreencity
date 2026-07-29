@@ -1533,6 +1533,14 @@ body.ems-pink-theme .law-article li,
 body.ems-pink-theme .ems-note p {
     color: #ffeaf6;
 }
+    .law-article p.penalty {
+        color: #ff6b6b;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(255, 64, 64, 0.2);
+    }
+    .law-article p.penalty strong {
+        color: #ff3b3b;
+    }
 
 body.ems-pink-theme .law-article ul li::marker,
 body.ems-pink-theme .law-article ul li::before {
