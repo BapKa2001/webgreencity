@@ -852,6 +852,29 @@ nav a.active {
     letter-spacing: 0.03em;
 }
 
+/* Pink-white highlight for EMS card on rules page */
+.ems-rule-card {
+    border-color: rgba(255, 186, 222, 0.36);
+    background: rgba(255, 173, 214, 0.08);
+}
+
+.ems-rule-card:hover,
+.ems-rule-card:focus-within {
+    box-shadow: 0 28px 65px rgba(255, 170, 214, 0.24);
+    border-color: rgba(255, 209, 234, 0.56);
+    background: rgba(255, 186, 222, 0.14);
+}
+
+.ems-rule-link {
+    background: linear-gradient(135deg, rgba(255, 245, 252, 0.14), rgba(255, 175, 216, 0.12));
+    box-shadow: inset 0 0 0 1px rgba(255, 220, 240, 0.28), 0 0 22px rgba(255, 187, 224, 0.16);
+}
+
+.ems-rule-link h2 {
+    color: #ffd8ee;
+    text-shadow: 0 0 14px rgba(255, 173, 214, 0.35);
+}
+
 .law-detail {
     padding: 120px 42px 80px;
     display: flex;
