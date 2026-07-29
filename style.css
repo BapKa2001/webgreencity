@@ -370,6 +370,55 @@ nav a.active {
     transform: translateZ(60px) rotateX(4deg) rotateY(-6deg) scale(1.02);
 }
 
+/* Specular / glossy reflection effect for hero logo */
+.three-d-wrap {
+    display: inline-block;
+    position: relative;
+    border-radius: 36px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.three-d-wrap::before {
+    /* subtle glossy top highlight */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.02));
+    pointer-events: none;
+    mix-blend-mode: screen;
+    transform: translateZ(60px);
+}
+
+.three-d-wrap::after {
+    /* moving specular sheen */
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -40%;
+    width: 40%;
+    height: 120%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg) translateX(-100%);
+    filter: blur(8px);
+    opacity: 0.9;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    animation: sheen 3s ease-in-out infinite;
+}
+
+@keyframes sheen {
+    0% { transform: skewX(-25deg) translateX(-120%); opacity: 0; }
+    10% { opacity: 0.9; }
+    50% { transform: skewX(-25deg) translateX(120%); opacity: 0.9; }
+    90% { opacity: 0; }
+    100% { transform: skewX(-25deg) translateX(120%); opacity: 0; }
+}
+
 @keyframes float {
     0% {
         transform: translateY(0px);
