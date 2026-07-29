@@ -680,6 +680,61 @@ nav a.active {
     margin-bottom: 14px;
 }
 
+/* Law article typography and list styles */
+.law-article {
+    background: linear-gradient(180deg, rgba(6,12,8,0.6), rgba(3,8,6,0.55));
+    border: 1px solid rgba(57,255,20,0.06);
+    padding: 26px 28px;
+    border-radius: 18px;
+}
+
+.law-article h3 {
+    color: var(--accent);
+    font-size: 1.45rem;
+    margin: 14px 0 12px;
+    padding: 10px 14px;
+    background: rgba(57,255,20,0.04);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(57,255,20,0.03);
+}
+
+.law-article h4 {
+    color: #c9ff8f;
+    font-size: 1rem;
+    margin: 12px 0 8px;
+    font-weight: 700;
+}
+
+.law-article p,
+.law-article li {
+    color: #d8e7c8;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.law-article ul {
+    padding-left: 26px;
+    margin-bottom: 16px;
+}
+
+.law-article ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.law-article ul li::marker { color: var(--accent); }
+
+/* Fallback for browsers where ::marker styling is limited */
+.law-article ul li::before {
+    content: '•';
+    color: var(--accent);
+    position: absolute;
+    left: -18px;
+    top: 0;
+    font-weight: 800;
+}
+
 .rules-page {
     padding: 120px 42px 80px;
 }
