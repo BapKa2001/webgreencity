@@ -87,6 +87,23 @@ header {
     object-fit: contain;
 }
 
+/* Logo rotation (spin) */
+.logo img.spin {
+    transform-origin: 50% 50%;
+    animation: logo-spin 6s linear infinite;
+    will-change: transform;
+}
+
+@keyframes logo-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Pause spin on hover for accessibility */
+.logo img.spin:hover {
+    animation-play-state: paused;
+    transform: rotate(0deg) scale(1.02);
+}
+
 .logo h2 {
     font-size: 20px;
     letter-spacing: 0.12em;
@@ -166,6 +183,29 @@ nav a.active {
     text-transform: uppercase;
     margin-bottom: 28px;
     text-shadow: 0 0 28px rgba(57, 255, 20, 0.2);
+}
+
+/* Neon text effect */
+.neon {
+    color: var(--accent);
+    text-shadow:
+        0 0 6px rgba(57, 255, 20, 0.95),
+        0 0 12px rgba(57, 255, 20, 0.9),
+        0 0 28px rgba(57, 255, 20, 0.7),
+        0 0 64px rgba(57, 255, 20, 0.45);
+}
+
+@keyframes neon-flicker {
+    0% { text-shadow: 0 0 6px rgba(57,255,20,0.95), 0 0 12px rgba(57,255,20,0.9); opacity: 1; }
+    5% { text-shadow: none; opacity: 0.85; }
+    7% { text-shadow: 0 0 8px rgba(57,255,20,0.9), 0 0 18px rgba(57,255,20,0.75); opacity: 1; }
+    10% { text-shadow: 0 0 4px rgba(57,255,20,0.7); opacity: 0.92; }
+    20% { text-shadow: 0 0 12px rgba(57,255,20,0.9), 0 0 28px rgba(57,255,20,0.6); opacity: 1; }
+    100% { text-shadow: 0 0 6px rgba(57,255,20,0.95), 0 0 12px rgba(57,255,20,0.9), 0 0 28px rgba(57,255,20,0.7), 0 0 64px rgba(57,255,20,0.45); opacity: 1; }
+}
+
+.neon.flicker {
+    animation: neon-flicker 3s infinite alternate;
 }
 
 .left p {
@@ -871,4 +911,53 @@ footer p {
         height: 40px;
         font-size: 24px;
     }
+}
+
+/* Law book / Police page specific styles */
+.lawbook-hero {
+    padding: 120px 42px 80px;
+    text-align: center;
+}
+.lawbook-title {
+    font-size: clamp(2.4rem, 4vw, 4.4rem);
+    letter-spacing: 0.28em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    text-shadow: 0 0 18px rgba(255,255,255,0.12), 0 0 36px rgba(148, 0, 255, 0.06);
+}
+.lawbook-subtitle {
+    color: var(--accent-blue);
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+.lawbook-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+.lawbook-btn {
+    padding: 14px 34px;
+    border-radius: 28px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border: 2px solid rgba(255,255,255,0.04);
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    box-shadow: 0 12px 38px rgba(0,0,0,0.45);
+}
+.lawbook-btn.blue { box-shadow: 0 8px 36px rgba(78,156,255,0.12); border-color: rgba(78,156,255,0.28); }
+.lawbook-btn.pink { box-shadow: 0 8px 36px rgba(190,45,255,0.12); border-color: rgba(190,45,255,0.28); }
+.lawbook-btn.red { box-shadow: 0 8px 36px rgba(255,45,90,0.12); border-color: rgba(255,45,90,0.28); }
+.lawbook-note {
+    max-width: 860px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 28px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.04);
+    color: #ffd8ff;
 }
