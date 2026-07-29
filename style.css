@@ -88,20 +88,27 @@ header {
 }
 
 /* Logo rotation (spin) */
-.logo img.spin {
+.logo {
+    perspective: 800px;
+}
+
+.logo img,
+.rules-title-logo {
     transform-origin: 50% 50%;
+    transform-style: preserve-3d;
     animation: logo-spin 6s linear infinite;
     will-change: transform;
 }
 
 @keyframes logo-spin {
-    to { transform: rotate(360deg); }
+    to { transform: rotateY(360deg); }
 }
 
 /* Pause spin on hover for accessibility */
-.logo img.spin:hover {
+.logo img:hover,
+.rules-title-logo:hover {
     animation-play-state: paused;
-    transform: rotate(0deg) scale(1.02);
+    transform: rotateY(0deg) scale(1.02);
 }
 
 .logo h2 {
