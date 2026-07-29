@@ -843,6 +843,13 @@ nav a.active {
     grid-template-columns: repeat(2, minmax(260px, 1fr));
 }
 
+/* Balance layout when rules page has exactly three cards */
+.rules-grid-three .rules-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(640px, 100%);
+}
+
 .rules-card,
 .newsCard,
 .card,
