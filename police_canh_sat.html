@@ -24,10 +24,7 @@
 
   <main style="padding:80px 24px; max-width:980px; margin: 0 auto;">
     <h1 style="color:var(--accent);">Luật Cảnh Sát</h1>
-    <p>
-      <button id="show-law" class="btn btn5" aria-expanded="false">Hiện Luật</button>
-    </p>
-    <div id="law-content" style="display:none; color:#d8e7c8; line-height:1.8;" aria-hidden="true">
+    <div id="law-content" style="display:block; color:#d8e7c8; line-height:1.8;" aria-hidden="false">
       <h3>Chương I: Quy Định Chung Về Hoạt Động Của Cảnh Sát</h3>
       <p><strong>Súng điện</strong> • Sử dụng để khống chế đối tượng.</p>
       <ul>
@@ -120,17 +117,4 @@
     <p>© THÀNH LẬP NGÀY 1/8/2026.</p>
   </footer>
 </body>
-<script>
-  (function(){
-    var btn = document.getElementById('show-law');
-    var content = document.getElementById('law-content');
-    btn.addEventListener('click', function(){
-      var visible = content.style.display === 'block';
-      content.style.display = visible ? 'none' : 'block';
-      btn.setAttribute('aria-expanded', String(!visible));
-      content.setAttribute('aria-hidden', String(visible));
-      if(!visible) content.scrollIntoView({behavior:'smooth'});
-    });
-  })();
-</script>
 </html>
