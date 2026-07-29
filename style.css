@@ -342,6 +342,11 @@ nav a.active {
     align-items: center;
 }
 
+/* Ensure 3D perspective for hero logo */
+.right {
+    perspective: 1200px;
+}
+
 .right img {
     width: min(520px, 100%);
     border-radius: 36px;
@@ -351,6 +356,18 @@ nav a.active {
     transform-style: preserve-3d;
     animation: float 6s ease-in-out infinite, logo-spin 6s linear infinite;
     will-change: transform;
+}
+
+/* Hero logo 3D appearance */
+.three-d {
+    transform: translateZ(40px) rotateX(6deg) rotateY(-8deg);
+    box-shadow: 0 40px 120px rgba(0,0,0,0.6), 0 12px 40px rgba(57,255,20,0.06);
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.45));
+    backface-visibility: hidden;
+}
+
+.three-d:hover {
+    transform: translateZ(60px) rotateX(4deg) rotateY(-6deg) scale(1.02);
 }
 
 @keyframes float {
