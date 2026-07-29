@@ -1197,11 +1197,41 @@ footer p {
     font-weight: 800;
     letter-spacing: 0.04em;
     text-decoration: none;
-    box-shadow: 0 12px 38px rgba(0,0,0,0.45);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
+    box-shadow: 0 12px 38px rgba(0,0,0,0.45), 0 0 12px rgba(255,255,255,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    animation: lawbook-neon 2.2s ease-in-out infinite;
 }
-.lawbook-btn.blue { box-shadow: 0 8px 36px rgba(78,156,255,0.12); border-color: rgba(78,156,255,0.28); }
-.lawbook-btn.pink { box-shadow: 0 8px 36px rgba(190,45,255,0.12); border-color: rgba(190,45,255,0.28); }
-.lawbook-btn.red { box-shadow: 0 8px 36px rgba(255,45,90,0.12); border-color: rgba(255,45,90,0.28); }
+.lawbook-btn:hover {
+    transform: translateY(-3px);
+}
+
+.lawbook-btn.blue {
+    border-color: rgba(78,156,255,0.38);
+    box-shadow: 0 8px 36px rgba(78,156,255,0.22), 0 0 18px rgba(78,156,255,0.24);
+}
+
+.lawbook-btn.red {
+    border-color: rgba(255,45,90,0.38);
+    box-shadow: 0 8px 36px rgba(255,45,90,0.22), 0 0 18px rgba(255,45,90,0.24);
+}
+
+.lawbook-btn.pink {
+    border-color: rgba(190,45,255,0.38);
+    box-shadow: 0 8px 36px rgba(190,45,255,0.22), 0 0 18px rgba(190,45,255,0.24);
+}
+
+@keyframes lawbook-neon {
+    0%,
+    100% {
+        filter: brightness(1);
+        opacity: 1;
+    }
+    50% {
+        filter: brightness(1.18);
+        opacity: 0.92;
+    }
+}
 .lawbook-note {
     max-width: 860px;
     margin: 0 auto;
