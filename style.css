@@ -350,7 +350,7 @@ nav a.active {
 .right img {
     width: min(520px, 100%);
     border-radius: 36px;
-    box-shadow: 0 0 90px rgba(57, 255, 20, 0.18);
+    box-shadow: none;
     /* keep float vertical animation and add horizontal 3D spin */
     transform-origin: 50% 50%;
     transform-style: preserve-3d;
@@ -361,8 +361,8 @@ nav a.active {
 /* Hero logo 3D appearance */
 .three-d {
     transform: translateZ(40px) rotateX(6deg) rotateY(-8deg);
-    box-shadow: 0 40px 120px rgba(0,0,0,0.6), 0 12px 40px rgba(57,255,20,0.06);
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.45));
+    box-shadow: none;
+    filter: none;
     backface-visibility: hidden;
 }
 
@@ -428,7 +428,7 @@ nav a.active {
     width: 100%;
     height: auto;
     opacity: 0.32;
-    filter: blur(4px) saturate(0.7);
+    filter: none;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
