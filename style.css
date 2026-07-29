@@ -1145,6 +1145,35 @@ footer p {
     color: #ffd8ff;
 }
 
+.pd-law-main {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+.pd-law-note {
+    text-align: left;
+}
+
+.pd-law-note strong {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #fff3aa;
+}
+
+.pd-law-note p {
+    margin: 6px 0;
+}
+
+.pd-written-by {
+    margin-top: 18px;
+    text-align: center;
+    color: #a3c7ff;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
 /* Law article styles */
 .law-article {
     background: linear-gradient(180deg, rgba(0,0,0,0.42), rgba(0,0,0,0.36));
