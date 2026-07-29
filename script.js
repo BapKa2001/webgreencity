@@ -290,7 +290,7 @@ function createLeaf() {
 
 }
 
-setInterval(createLeaf, 700);
+setInterval(createLeaf, 7000);
 
 // ===============================
 // Loading
