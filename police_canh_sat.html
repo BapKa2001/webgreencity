@@ -122,5 +122,40 @@
     <p>© Bản quyền Team Green City.</p>
     <p>© THÀNH LẬP NGÀY 1/8/2026.</p>
   </footer>
+  <script>
+    (function(){
+      var tocLinks = Array.from(document.querySelectorAll('.law-toc a'));
+      if(tocLinks.length===0) return;
+      var sections = Array.from(document.querySelectorAll('.law-article h3[id]'));
+
+      tocLinks.forEach(function(a){
+        a.addEventListener('click', function(ev){
+          ev.preventDefault();
+          var id = this.getAttribute('href').slice(1);
+          var target = document.getElementById(id);
+          if(!target) return;
+          var offset = 80;
+          var top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+          tocLinks.forEach(function(l){ l.classList.remove('active'); });
+          this.classList.add('active');
+        });
+      });
+
+      if(sections.length){
+        var obs = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){
+              var id = entry.target.id;
+              tocLinks.forEach(function(l){
+                l.classList.toggle('active', l.getAttribute('href') === ('#'+id));
+              });
+            }
+          });
+        }, { root: null, rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+        sections.forEach(function(s){ obs.observe(s); });
+      }
+    })();
+  </script>
 </body>
 </html>
