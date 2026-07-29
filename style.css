@@ -1329,6 +1329,83 @@ footer p {
     opacity: 0.9;
 }
 
+/* City lawbook homepage style (modeled after TAI LIEU LUAT GREEN) */
+.city-law-main {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.city-law-title {
+    text-align: center;
+    font-size: clamp(2.2rem, 4.2vw, 4.3rem);
+    line-height: 1.08;
+    letter-spacing: 0.1em;
+    color: #ecffe5;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    text-shadow:
+        0 0 12px rgba(57, 255, 20, 0.24),
+        0 0 28px rgba(57, 255, 20, 0.14);
+}
+
+.city-law-note {
+    max-width: 940px;
+    margin: 0 auto 24px;
+    padding: 20px 24px;
+    border-radius: 14px;
+    border: 1px solid rgba(57, 255, 20, 0.14);
+    background: rgba(6, 18, 12, 0.66);
+}
+
+.city-law-note h2 {
+    color: #c8ff9b;
+    font-size: 1.06rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+}
+
+.city-law-note p {
+    margin: 6px 0;
+    color: #dff1d2;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+.city-law-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(190px, 1fr));
+    gap: 14px;
+}
+
+.city-law-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 62px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #ecffe5;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    background: linear-gradient(135deg, rgba(57,255,20,0.2), rgba(57,255,20,0.08));
+    border: 1px solid rgba(57,255,20,0.42);
+    box-shadow:
+        0 10px 26px rgba(0,0,0,0.35),
+        0 0 16px rgba(57,255,20,0.2),
+        inset 0 0 0 1px rgba(255,255,255,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.city-law-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 16px 30px rgba(0,0,0,0.35),
+        0 0 20px rgba(57,255,20,0.28),
+        inset 0 0 0 1px rgba(210,255,198,0.2);
+}
+
 /* Law article styles */
 .law-article {
     background: linear-gradient(180deg, rgba(0,0,0,0.42), rgba(0,0,0,0.36));
@@ -1629,6 +1706,8 @@ body.ems-pink-theme .ems-home-main {
     .law-article { padding:18px 16px; }
     .law-toc { gap:8px; }
     .ems-quick-links { grid-template-columns: 1fr; }
+    .city-law-main { min-height: auto; }
+    .city-law-buttons { grid-template-columns: 1fr; }
     body.ems-pink-theme .ems-home-main {
         min-height: auto;
         justify-content: flex-start;
